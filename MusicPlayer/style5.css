@@ -1,0 +1,159 @@
+/* login and signup designs */
+.logindis{
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    display: none;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0.8rem 0.8rem 0.5rem 0.1rem grey;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+.logincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+    height: 20rem;
+    color: coral;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#loginbtn {
+    font-size: 2rem;
+    border: 2px solid green;
+    border-radius: 1rem;
+    background-color: lawngreen
+}
+
+#loginbtn:hover {
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+#loginbtn:active {
+    transform: scale(0.8, 0.8);
+    box-shadow: 0.1rem 0.1rem 1rem 0.2rem skyblue;
+}
+
+#lusername,
+#lPassword,#susername,#sPassword,#sEmail,#csPassword {
+    text-align: center;
+    border: 2px solid;
+    border-radius: 2rem;
+    height: 4rem;
+    padding-left: 2rem;
+}
+
+#lusername:focus,
+#lPassword:focus,#susername:focus,#sPassword:focus,#sEmail:focus,#csPassword:focus {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#switchs,#switchl {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: blue;
+}
+.fa-times-circle{
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+
+/* signup */
+
+.signupdis{
+    display: none;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid gray;
+    box-shadow: 0.8rem 0.8rem 0.5rem 0.1rem grey;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50rem;
+    height: 50rem;
+    color: coral;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+#signupbtn {
+    font-size: 2rem;
+    border: 2px solid green;
+    border-radius: 1rem;
+    background-color: lawngreen
+}
+
+#signupbtn:hover {
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+#signupbtn:active {
+    transform: scale(0.8, 0.8);
+    box-shadow: 0.1rem 0.1rem 1rem 0.2rem skyblue;
+}
+
+#susername,
+#sPassword,#sEmail,#csPassword,#lusername,#lPassword {
+    text-align: center;
+    border: 2px solid;
+    border-radius: 2rem;
+    height: 4rem;
+}
+
+#susername:focus,
+#sPassword:focus,#sEmail:focus,#csPassword:focus,#lusername:focus,#lPassword:focus {
+    text-align: left;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#switchl,#switchs {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: blue;
+}
+
+#switchl:hover,#switchs:hover {
+   font-weight: bold;
+}
+
+
+#tologin,#tosignup{
+    text-decoration: none;
+    
+}
+#loginmessage,#signupmessage{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MUSIC PLAYER</title>
+
+</head>
+
+<body>
+    <div class="main_div">
+        <!-- navigation bar -->
+        <div class="navbar">
+            <div class="logo"><i class="fas fa-music"></i></div>
+            <div class="inputevent" id="selectinput">
+                <!-- <label for="selections">Choose a Song</label> -->
+                <select name="musics" id="selections">
+                    <option value="">Choose a Song</option>
+                </select>
+                <input type="text" placeholder="Search" id="searchinput">
+                <button id="searchbtn">Search</button>
+            </div>
+            <div class="sign" id="usersign">
+                <div id="logoutdiv">
+                    <button id="tosignoutbtn"><a href="#" id="tosignout">Sign OUT</a></button>
+                    <h3 id="userprofile"></h3>
+                </div>
+   
+                <div id="loginsystem">
+                <button id="tologinbtn"><a href="#" id="tologin">Sign IN</a></button>
+                <button id="tosignupbtn"><a href="#" id="tosignup">Sign UP</a></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="headingmusicplayer">
+            <h2 class="headmusic">
+                MUSIC PLAYER
+            </h2>
+        </div>
+        <!-- Make three divs  -->
+        <div class="divs">
+            <!-- Div1 -->
+
+            <div class="parentdiv1">
+
+                <div class="container">
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- div2 -->
+
+            <!-- Music box div -->
+
+            <div class="music-box" id="musicdiv">
+
+                <!-- for images  -->
+                <div class="imagesdiv">
+
+                    <!-- for image -->
+
+                    <div class="img_div" id="img_div">
+
+                    </div>
+
+
+                    <!-- some more images -->
+
+                    <!-- four images  -->
+                    <div class="img_four">
+                        <div class="i1 comm" id="i1"></div>
+                        <div class="i2 comm" id="i2"></div>
+                        <div class="i3 comm" id="i3"></div>
+                        <div class="i4 comm" id="i4"></div>
+                    </div>
+
+
+
+                </div>
+                <!-- content like title,author,next,forward,pause,play buttons,waves -->
+
+                <div class="content" id="contentdiv">
+                    <!-- title-->
+
+                    <div class="titlediv">
+                        <h2 class="title" id="title">
+                            हज़ार बार सुनलो फिर भी दिल नहीं भरेगा
+                        </h2>
+                    </div>
+
+                    <!-- author -->
+
+                    <div class="authordiv">
+                        <h5 class="author" id="author">
+                            Shri Ram Bhakti
+                        </h5>
+                    </div>
+                    <!-- audio -->
+                    <audio src="../musicplayerapp/a1.mp3"></audio>
+                    <!-- progress bar -->
+
+                    <div class="progress_container" id="progress_container">
+
+                        <div class="time_meter" id="time_meter">
+                            <div class="curr_time" id="curr_time">0:00</div>
+                            <div class="duration_time" id="duration_time">7:56</div>
+                        </div>
+
+                        <div class="progress_div" id="progress_div">
+                            <div class="progress_bar" id="progress_bar"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Animation balls or waves  -->
+
+                    <ul class="parent_ul data_hide" id="parent_ul">
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                        <li class="child_li"></li>
+                    </ul>
+
+                    <!-- buttons -->
+
+                    <div class="control_div">
+                        <i class="fas fa-backward controlbtn" id="prev" title="Previous"></i>
+                        <i class="fas fa-play controlbtn" id="play" title="Play"></i>
+                        <i class="fas fa-forward controlbtn" id="next" title="Forward"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- div3 -->
+            <div class="parentdiv2">
+
+                <div class="container">
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parent" id="parent2">
+                        <div class="c1">
+                            <div class="c2">
+                                <div class="c3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- login and signup -->
+
+      <div class="logindis">
+        <i class="fas fa-times-circle" id="logincross"></i>
+        <div class="logincontainer">
+            <label for="lusername" style="font-size:2rem ;">Enter your Username</label>
+            <input type="text" placeholder="Enter Username" id="lusername" name="username">
+
+            <label for="lPassword" style="font-size:2rem ;">Enter your Password</label>
+            <input type="password" placeholder="Enter Password" id="lPassword" name="Password">
+    
+            <div class="switchlogin">
+                <a href="#" id="switchl">To create an account</a>
+                <button type="submit" id="loginbtn">Login</button>
+            </div>
+
+            <div id="loginmessage">
+                    
+            </div>
+
+        </div>
+    </div>
+    <!-- signup -->
+
+    <div class="signupdis">
+        <i class="fas fa-times-circle" id="signupcross"></i>
+        <div class="signupcontainer">
+            <label for="susername" style="font-size:2rem ;">Enter your Username</label>
+            <input type="text" placeholder="Enter Username" id="susername" name="username">
+            <h3 id="suer"></h3>
+            <label for="sEmail" style="font-size:2rem ;">Enter your Email</label>
+            <input type="email" placeholder="Enter Email" id="sEmail" name="Email">
+            <h3 id="seer"></h3>
+            <label for="sPassword" style="font-size:2rem ;">Enter your Password</label>
+            <input type="password" placeholder="Enter Password" id="sPassword" name="Password">
+            <h3 id="sper"></h3>
+            <label for="csPassword" style="font-size:2rem ;">Enter your confirm Password</label>
+            <input type="password" placeholder="Enter confirm  Password" id="csPassword" name="Password">
+
+            <div class="switchsignup">
+                <a href="#" id="switchs">Already exist.</a>
+                <button type="submit" id="signupbtn">SignUp</button>
+            </div>
+
+            <div id="signupmessage">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index2.js"></script>
+    <script type="module" src="index3.js"></script>
+    <script type="module" src="index4.js"></script>
+    <script type="module" src="index5.js"></script>
+</body>
+
+</html>

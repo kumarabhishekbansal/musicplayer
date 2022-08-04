@@ -1,0 +1,39 @@
+@media screen and (max-width:1500px) {
+  .music-box{
+    height: 60rem;
+  }.headmusic{
+    font-size: 6rem;
+  }.headingmusicplayer{
+    width: 60%;
+    text-align: center;
+    /* border: 2px solid orange; */
+  }.container{
+    height: 100%;
+    /* border: 5px solid red; */
+  }
+  .parent{
+    width: 17rem;
+   height: 17rem;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .music-box {
+      /* background-color:red; */
+      border: 8px solid burlywood;
+      height: 80rem;
+    }
+    .imagesdiv{
+        justify-content: space-between;
+    }
+    #img_div{
+      height: 60rem;
+    }
+    .titlediv,.authordiv{
+        font-size: 2rem;
+    }
+    .divs{
+      width: 100rem;
+    }
+  }

@@ -1,0 +1,163 @@
+
+/* side bar and navigation bars  */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid red;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 4rem;
+    box-shadow: 0rem 0rem 0.4rem 1rem yellowgreen inset;
+}
+.logo{
+    /* border:2px solid red; */
+    width: 15%;
+    font-size: 4rem;
+    color: blueviolet;
+    animation: logor 2s linear 0.1s infinite alternate;
+}
+@keyframes logor {
+    0%{
+        transform: rotateX(0deg);
+    }
+    25%{
+        transform: rotateX(90deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    75%{
+        transform: rotateY(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+#usersign{
+    width: 30%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+#usersign #logoutdiv{
+    /* display: flex; */
+    display: none;
+    width: 50%;
+}
+#usersign #loginsystem
+{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#usersign button{
+    border:2px solid rebeccapurple;
+    border-radius: 2rem;
+    line-height: 1rem;
+    width: 40%;
+    background-color: #00cdac;
+}
+#usersign a{
+    text-decoration: none;
+}
+
+.inputevent{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 40%;
+    position: relative;
+}
+select{
+    background-color: white;
+}
+#selections{
+    width: 50%;
+    /* border:5px solid red */
+    border-radius: 2rem;
+    padding:0rem 2rem ;
+}
+#searchinput{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+
+}
+#searchbtn{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-radius: 2rem;
+    width: 30%;
+    background-color: #00cdac;
+    cursor: pointer;
+}
+#searchbtn:active{
+    transform: scale(0.8,0.8);
+}
+
+.divs{
+    /* border: 5px solid blue; */
+    position: relative;
+    top:7rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parentdiv1{
+    visibility:hidden;
+    width: 30%;
+    height: 100%;
+}
+.parentdiv2{
+    visibility:hidden;
+    width: 30%;
+    height: 100%;
+}
+.headingmusicplayer{
+    /* border: 2px solid red; */
+    position: absolute;
+    top:6rem;
+    width: 50%;
+    left:25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.headmusic{
+    margin-top: 2rem;
+    color: crimson;
+    font-style: italic;
+    font-size: 4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:type 3s steps(12) infinite alternate,blink 1s steps(12) infinite normal;
+    border-right: 2px solid salmon;
+}
+
+@keyframes type {
+    0%{
+        width: 0%;
+        color: yellow;
+    }100%{
+        width: 55%;
+        color: goldenrod;
+    }
+}
+
+@keyframes blink {
+    0%{
+        border-color: salmon;
+    }100%{
+        border-color: transparent;
+    }
+}

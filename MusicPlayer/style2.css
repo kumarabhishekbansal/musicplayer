@@ -1,0 +1,109 @@
+
+/* side bars  waves */
+
+
+.container{
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+.parent {
+    margin: 2rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 20%;
+    animation: b1 1s linear infinite alternate-reverse;
+}
+
+.c1 {
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    border: 2px solid green;
+    animation: scale1 0.8s linear infinite alternate-reverse;
+}
+
+.c2 {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid yellow;
+    animation: scale2 0.6s linear infinite alternate-reverse;
+}
+
+.c3 {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid blue;
+    animation: scale3 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes b1{
+    0% {
+        transform: translate3d(0,0,0) scale(0.5,0.5);
+        box-shadow: 1rem 1rem 0.5rem 0.1rem rgb(0, 136, 255)   ;
+        background: radial-gradient(red, yellow);
+    }
+
+    50% {
+        transform: translate3d(-6rem,0,-8rem) scale(1,1);
+        box-shadow:1rem 1rem 0.5rem 0.1rem rgb(60, 0, 255);
+        background: radial-gradient(green, aquamarine);
+    }
+
+    100% {
+        transform: translate3d(4rem,4rem,8rem) scale(0.8,0.8);
+        box-shadow: 1rem 1rem 0.5rem 0.1rem rgb(123, 0, 255);
+        background: radial-gradient(rgb(107, 97, 125), rgb(69, 69, 37));
+    }
+}
+
+.parent .c1:nth-child(1) {
+    animation-delay: 0.2s;
+    background-color: rgb(213, 135, 222);
+}
+
+.parent .c2:nth-child(2) {
+    
+    animation-delay: 0.4s;
+    background-color: brown;
+}
+
+.parent .c3:nth-child(3) {
+    
+    animation-delay: 0.6s;
+    background-color: coral;
+}
+
+@keyframes scale1 {
+    0%{
+        box-shadow: 1rem 1rem 0.5rem 1rem rgb(255, 153, 0);
+        transform: scale(1,1);
+    }100%{
+        box-shadow: 1rem 1rem 0.5rem 1rem rgb(242, 255, 0);
+        transform: scale(0.8,0.8);
+    }
+}
+
+@keyframes scale2 {
+    0%{
+        box-shadow:1rem 1rem 0.5rem 1rem rgb(229, 255, 0);
+        transform: scale(1,1);
+    }100%{
+        box-shadow: 1rem 1rem 0.5rem 1rem rgb(98, 255, 0);
+        transform: scale(0.8,0.8);
+    }
+}
+
+@keyframes scale3 {
+    0%{
+        box-shadow: 1rem 1rem 0.5rem 1rem rgb(0, 255, 13);
+        transform: scale(1,1);
+    }100%{
+        box-shadow: 1rem 1rem 0.5rem 1rem rgb(0, 255, 38);
+        transform: scale(0.8,0.8);
+    }
+}
